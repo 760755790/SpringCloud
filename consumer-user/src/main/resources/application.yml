@@ -1,0 +1,13 @@
+server:
+  port: 8020
+
+spring:
+  application:
+    name: consumer-user
+
+eureka:
+  instance:
+    prefer-ip-address: true # 注册的时候使用服务的ip进行注册
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
